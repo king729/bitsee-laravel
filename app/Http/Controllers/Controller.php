@@ -70,7 +70,7 @@ class Controller extends BaseController
         $http = new \GuzzleHttp\Client(['exceptions' => false, 'CURLOPT_SSL_VERIFYPEER' => false]);
 
 
-        $response = $http->post('http://127.0.0.1:8000/oauth/token', [
+        $response = $http->post('http://172.104.112.35:8000/oauth/token', [
             'form_params' => [
                 'grant_type' => 'password',
                 'client_id' => '4',
