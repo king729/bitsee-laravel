@@ -40,9 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-
+        'app' => [
+             'driver' => 'app',
+             'provider' => 'users',
+        ],
         'api' => [
-            'driver' => 'token',
+            'driver' => 'passport',
             'provider' => 'users',
         ],
     ],
@@ -98,5 +101,7 @@ return [
             'expire' => 60,
         ],
     ],
+
+    'oauth2_url' => env('OAUTH2_URL',''),
 
 ];
